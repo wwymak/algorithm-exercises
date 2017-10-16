@@ -1,4 +1,6 @@
-
+/**
+Implementation of mergesort algorithm (as per Tim Roughgarden's book)
+**/
 let testArr = [17, 12, 11, 61, 74, 72, 73, 52, 77, 40];
 
 let merge = function (arr1, arr2 ) {
