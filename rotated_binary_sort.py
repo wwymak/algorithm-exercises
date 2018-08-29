@@ -31,15 +31,15 @@ def custom_binary_search(mlist, a):
             return middle
         #the left side is in the correct order
         elif mlist[start] < mlist[middle]:
-            if a <mlist[middle] :
+            if a <= mlist[middle]:
                 return binary_search(mlist[start: middle], a)
             else:
                 return middle + custom_binary_search(mlist[middle:], a)
 
         #the right side is in correct order
         else:
-            if mlist[middle] < a < mlist[len(mlist) -1]:
-                return middle + binary_search(mlist[middle: len(mlist) -1], a)
+            if mlist[middle] < a <= mlist[len(mlist) - 1]:
+                return middle + binary_search(mlist[middle: len(mlist)], a)
             else:
                 return custom_binary_search(mlist[start: middle], a)
 
