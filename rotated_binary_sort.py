@@ -1,7 +1,10 @@
-
-
 def binary_search(mlist, a):
-
+    """
+    normal binary search of sorted list for Olog(n)
+    :param mlist: rotated sorted list
+    :param a: nummber to look for
+    :return: index of a
+    """
     start = 0
     end = len(mlist) -1
 
@@ -17,7 +20,8 @@ def binary_search(mlist, a):
 
 def custom_binary_search(mlist, a):
     """
-
+    search a rotated sorted list for the index of a number in the list (along the 
+    lines of binary search
     :param mlist: rotated sorted list
     :param a: nummber to look for
     :return: index of a
